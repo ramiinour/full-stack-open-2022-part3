@@ -6,6 +6,6 @@ Content-Type: application/json
 
 
 {
-    "name":"ramii",
+    "name":"rami",
     "number":"123"
 }
