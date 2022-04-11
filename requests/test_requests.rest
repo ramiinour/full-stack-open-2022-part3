@@ -1,6 +1,14 @@
 
+@baseUrl = https://evening-garden-50104.herokuapp.com
+
+### Get persons collection from localhost
 GET http://localhost:3001/api/persons/
-###
+
+### Get persons collection from heroku 
+GET {{baseUrl}}/api/persons/
+
+
+### Post person to local host
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
@@ -9,3 +17,21 @@ Content-Type: application/json
     "name":"rami",
     "number":"123"
 }
+
+### Post person to heroku
+POST {{baseUrl}}/api/persons
+Content-Type: application/json
+
+
+{
+    "name":"rami",
+    "number":"1234"
+}
+
+
+### Delete person from local host 
+DELETE http://localhost:3001/api/persons/1
+
+### Delete person from heroku
+DELETE {{baseUrl}}/api/persons/1
+
