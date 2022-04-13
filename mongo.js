@@ -14,10 +14,6 @@ const url = `mongodb+srv://fullstack:${password}@cluster0.r6sdk.mongodb.net/phon
 
 mongoose.connect(url).catch((err) => console.error(err));
 
-mongoose.connection.on("error", (err) => {
-  console.err(err);
-});
-
 const PersonSchema = mongoose.Schema({
   name: String,
   number: String,
